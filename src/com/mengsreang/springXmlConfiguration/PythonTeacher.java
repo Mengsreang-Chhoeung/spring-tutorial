@@ -6,7 +6,7 @@ public class PythonTeacher implements Teacher {
 	
 	private TeacherService teacherService;
 	
-	public PythonTeacher(TeacherService teacherService) {
+	public void setTeacherService(TeacherService teacherService) {
 		this.teacherService = teacherService;
 	}
 

@@ -39,7 +39,7 @@
     	id="pythonTeacher"
     	class="com.mengsreang.springXmlConfiguration.PythonTeacher"
     >
-    	<constructor-arg ref="teacherService" />
+    	<property name="teacherService" ref="teacherService"></property>
     </bean>
     
     <bean
