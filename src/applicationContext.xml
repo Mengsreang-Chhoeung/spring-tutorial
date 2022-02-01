@@ -39,7 +39,9 @@
     	id="pythonTeacher"
     	class="com.mengsreang.springXmlConfiguration.PythonTeacher"
     >
-    	<property name="teacherService" ref="teacherService"></property>
+    	<property name="teacherService" ref="teacherService" />
+    	<property name="name" value="Kok Koko" />
+    	<property name="email" value="kok.koko123@spring.com" />
     </bean>
     
     <bean

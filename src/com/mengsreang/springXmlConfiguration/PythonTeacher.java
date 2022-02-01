@@ -5,9 +5,19 @@ import com.mengsreang.springXmlConfiguration.service.TeacherService;
 public class PythonTeacher implements Teacher {
 	
 	private TeacherService teacherService;
+	private String name;
+	private String email;
 	
 	public void setTeacherService(TeacherService teacherService) {
 		this.teacherService = teacherService;
+	}
+	
+	public void setName(String name) {
+		this.name = name;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
 	}
 
 	@Override
