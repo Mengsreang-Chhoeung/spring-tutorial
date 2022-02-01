@@ -35,13 +35,16 @@
     	<constructor-arg ref="teacherService" />
     </bean>
     
+    <!-- load the properties file: application.properties -->
+    <context:property-placeholder location="classpath:application.properties" />
+    
     <bean
     	id="pythonTeacher"
     	class="com.mengsreang.springXmlConfiguration.PythonTeacher"
     >
     	<property name="teacherService" ref="teacherService" />
-    	<property name="name" value="Kok Koko" />
-    	<property name="email" value="kok.koko123@spring.com" />
+    	<property name="name" value="${app.teacher.name}" />
+    	<property name="email" value="${app.teacher.email}" />
     </bean>
     
     <bean
