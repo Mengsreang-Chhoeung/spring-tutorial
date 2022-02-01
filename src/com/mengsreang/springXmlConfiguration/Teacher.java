@@ -1,4 +1,4 @@
-package com.mengsreang.basicJavaApplication;
+package com.mengsreang.springXmlConfiguration;
 
 public interface Teacher {
 	
