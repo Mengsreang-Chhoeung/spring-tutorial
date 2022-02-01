@@ -16,8 +16,11 @@ public class JavaApplication {
 		
 		// call methods on the bean
 		System.out.println(javaTeacher.getTeaching());
+		System.out.println(javaTeacher.getTeachingHours());
 		System.out.println(java.getTeaching());
+		System.out.println(java.getTeachingHours());
 		System.out.println(pythonTeacher.getTeaching());
+		System.out.println(pythonTeacher.getTeachingHours());
 		
 		// close the context
 		context.close();

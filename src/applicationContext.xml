@@ -24,16 +24,27 @@
     <bean
     	id="javaTeacher"
     	class="com.mengsreang.springXmlConfiguration.JavaTeacher"
-    ></bean>
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
     
     <bean
     	id="java"
     	class="com.mengsreang.springXmlConfiguration.JavaTeacher"
-    ></bean>
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
     
     <bean
     	id="pythonTeacher"
     	class="com.mengsreang.springXmlConfiguration.PythonTeacher"
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
+    
+    <bean
+    	id="teacherService"
+    	class="com.mengsreang.springXmlConfiguration.service.implementation.TeacherServiceImpl"
     >
     </bean>
     
