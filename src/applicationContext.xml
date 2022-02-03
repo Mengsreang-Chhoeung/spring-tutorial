@@ -56,6 +56,15 @@
     </bean>
     
     <bean
+    	id="rustTeacher"
+    	class="com.mengsreang.springXmlConfiguration.RustTeacher"
+    	init-method="initMethod"
+    	destroy-method="destroyMethod"
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
+    
+    <bean
     	id="teacherService"
     	class="com.mengsreang.springXmlConfiguration.service.implementation.TeacherServiceImpl"
     >

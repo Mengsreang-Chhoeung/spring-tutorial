@@ -20,5 +20,5 @@ public class GoTeacher implements Teacher {
 		String msg = "He teaches Go Language 4 hours in a day";
 		return this.teacherService.getTeachingHours(msg);
 	}
-
+	
 }
