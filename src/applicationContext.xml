@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<!-- 
+		Add a logger config to see logging messages.		
+		- For more detailed logs, set values to "FINEST"
+		- For info on logging levels, see: http://www.vogella.com/tutorials/Logging/article.html
+	-->
+	<bean
+		id="myLoggerConfig"
+		class="com.mengsreang.springXmlConfiguration.MyLoggerConfig"
+		init-method="initLogger"
+	>
+		<property name="rootLoggerLevel" value="FINE" />
+		<property name="printedLoggerLevel" value="FINE" />
+	</bean>
+
+    <bean
+    	id="javaTeacher"
+    	class="com.mengsreang.springXmlConfiguration.JavaTeacher"
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
+    
+    <bean
+    	id="java"
+    	class="com.mengsreang.springXmlConfiguration.JavaTeacher"
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
+    
+    <!-- load the properties file: application.properties -->
+    <context:property-placeholder location="classpath:application.properties" />
+    
+    <bean
+    	id="pythonTeacher"
+    	class="com.mengsreang.springXmlConfiguration.PythonTeacher"
+    >
+    	<property name="teacherService" ref="teacherService" />
+    	<property name="name" value="${app.teacher.name}" />
+    	<property name="email" value="${app.teacher.email}" />
+    </bean>
+    
+    <bean 
+    	id="goTeacher"
+    	class="com.mengsreang.springXmlConfiguration.GoTeacher"
+    	scope="prototype"
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
+    
+    <bean
+    	id="rustTeacher"
+    	class="com.mengsreang.springXmlConfiguration.RustTeacher"
+    	init-method="initMethod"
+    	destroy-method="destroyMethod"
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
+    
+    <bean
+    	id="teacherService"
+    	class="com.mengsreang.springXmlConfiguration.service.implementation.TeacherServiceImpl"
+    >
+    </bean>
+    
+</beans>
