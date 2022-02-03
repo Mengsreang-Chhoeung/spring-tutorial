@@ -13,6 +13,8 @@ public class JavaApplication {
 		Teacher javaTeacher = context.getBean("javaTeacher", Teacher.class);
 		Teacher java = context.getBean("java", Teacher.class);
 		Teacher pythonTeacher = context.getBean("pythonTeacher", Teacher.class);
+		Teacher goTeacher = context.getBean("goTeacher", Teacher.class);
+		Teacher go = context.getBean("goTeacher", Teacher.class);
 		
 		// call methods on the bean
 		System.out.println(javaTeacher.getTeaching());
@@ -21,6 +23,11 @@ public class JavaApplication {
 		System.out.println(java.getTeachingHours());
 		System.out.println(pythonTeacher.getTeaching());
 		System.out.println(pythonTeacher.getTeachingHours());
+		
+		boolean result = ( goTeacher == go );
+		System.out.println("Result: " + result);
+		System.out.println("Object GoTeacher One: " + goTeacher);
+		System.out.println("Object GoTeacher Two: " + go);
 		
 		// close the context
 		context.close();

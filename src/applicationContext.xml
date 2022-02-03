@@ -47,6 +47,14 @@
     	<property name="email" value="${app.teacher.email}" />
     </bean>
     
+    <bean 
+    	id="goTeacher"
+    	class="com.mengsreang.springXmlConfiguration.GoTeacher"
+    	scope="prototype"
+    >
+    	<constructor-arg ref="teacherService" />
+    </bean>
+    
     <bean
     	id="teacherService"
     	class="com.mengsreang.springXmlConfiguration.service.implementation.TeacherServiceImpl"
