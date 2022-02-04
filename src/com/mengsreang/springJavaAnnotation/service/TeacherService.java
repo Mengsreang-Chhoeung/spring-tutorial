@@ -1,5 +1,7 @@
-package com.mengsreang.springXmlConfiguration.service;
+package com.mengsreang.springJavaAnnotation.service;
 
 public interface TeacherService {
+	
 	public String getTeachingHours(String msg);
+	
 }
