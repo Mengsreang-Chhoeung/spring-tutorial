@@ -3,11 +3,13 @@ package com.mengsreang.springJavaAnnotation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 import com.mengsreang.springJavaAnnotation.service.TeacherService;
 
 @Component
+@Scope("prototype")
 public class PythonTeacher implements Teacher {
 
 	private TeacherService teacherService;

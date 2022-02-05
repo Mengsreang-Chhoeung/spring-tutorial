@@ -1,32 +1,41 @@
 package com.mengsreang.springJavaAnnotation;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
-
 import com.mengsreang.springJavaAnnotation.service.TeacherService;
 
-@Component("javaTeacher")
-@Scope("singleton")
-public class JavaTeacher implements Teacher {
+@Component
+public class RustTeacher implements Teacher {
 	
 	private TeacherService teacherService;
 	
 	@Autowired
-	public JavaTeacher(@Qualifier("teacherServiceImpl") TeacherService teacherService) {
+	public RustTeacher(@Qualifier("teacherServiceImpl") TeacherService teacherService) {
 		this.teacherService = teacherService;
 	}
 
 	@Override
 	public String getTeaching() {
-		return "He is Teaching Java Language";	
+		return "He is Teaching Rust Language";
 	}
 	
 	@Override
 	public String getTeachingHours() {
-		String msg = "He teaches Java Language 8 hours in a day";
+		String msg = "He teaches Rust Language 2 hours in a day";
 		return this.teacherService.getTeachingHours(msg);
 	}
-		
+	
+	@PostConstruct
+	public void initMethod() {
+		System.out.println("Hello Rust Teacher");
+	}
+	
+	@PreDestroy
+	public void destroyMethod() {
+		System.out.println("Good Bye Rust Teacher");
+	}
+
 }
