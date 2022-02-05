@@ -14,60 +14,17 @@
 	-->
 	<bean
 		id="myLoggerConfig"
-		class="com.mengsreang.springXmlConfiguration.MyLoggerConfig"
+		class="com.mengsreang.springJavaAnnotation.MyLoggerConfig"
 		init-method="initLogger"
 	>
 		<property name="rootLoggerLevel" value="FINE" />
 		<property name="printedLoggerLevel" value="FINE" />
 	</bean>
-
-    <bean
-    	id="javaTeacher"
-    	class="com.mengsreang.springXmlConfiguration.JavaTeacher"
-    >
-    	<constructor-arg ref="teacherService" />
-    </bean>
-    
-    <bean
-    	id="java"
-    	class="com.mengsreang.springXmlConfiguration.JavaTeacher"
-    >
-    	<constructor-arg ref="teacherService" />
-    </bean>
     
     <!-- load the properties file: application.properties -->
     <context:property-placeholder location="classpath:application.properties" />
     
-    <bean
-    	id="pythonTeacher"
-    	class="com.mengsreang.springXmlConfiguration.PythonTeacher"
-    >
-    	<property name="teacherService" ref="teacherService" />
-    	<property name="name" value="${app.teacher.name}" />
-    	<property name="email" value="${app.teacher.email}" />
-    </bean>
-    
-    <bean 
-    	id="goTeacher"
-    	class="com.mengsreang.springXmlConfiguration.GoTeacher"
-    	scope="prototype"
-    >
-    	<constructor-arg ref="teacherService" />
-    </bean>
-    
-    <bean
-    	id="rustTeacher"
-    	class="com.mengsreang.springXmlConfiguration.RustTeacher"
-    	init-method="initMethod"
-    	destroy-method="destroyMethod"
-    >
-    	<constructor-arg ref="teacherService" />
-    </bean>
-    
-    <bean
-    	id="teacherService"
-    	class="com.mengsreang.springXmlConfiguration.service.implementation.TeacherServiceImpl"
-    >
-    </bean>
+    <!-- Scan component for specific package -->
+    <context:component-scan base-package="com.mengsreang.springJavaAnnotation" />
     
 </beans>
