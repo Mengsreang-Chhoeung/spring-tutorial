@@ -1,11 +1,11 @@
-package com.mengsreang.springJavaAnnotation;
+package com.mengsreang.springJavaConfiguration;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
-import com.mengsreang.springJavaAnnotation.service.TeacherService;
+import com.mengsreang.springJavaConfiguration.service.TeacherService;
 
 @Component("javaTeacher")
 @Scope("singleton")

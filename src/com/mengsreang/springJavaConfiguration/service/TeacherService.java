@@ -1,4 +1,4 @@
-package com.mengsreang.springJavaAnnotation.service;
+package com.mengsreang.springJavaConfiguration.service;
 
 public interface TeacherService {
 	

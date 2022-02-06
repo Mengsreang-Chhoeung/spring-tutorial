@@ -1,7 +1,8 @@
-package com.mengsreang.springJavaAnnotation.service.implementation;
+package com.mengsreang.springJavaConfiguration.service.implementation;
 
 import org.springframework.stereotype.Component;
-import com.mengsreang.springJavaAnnotation.service.TeacherService;
+
+import com.mengsreang.springJavaConfiguration.service.TeacherService;
 
 @Component
 public class UniversityTeacherServiceImpl implements TeacherService {
