@@ -1,4 +1,4 @@
-package com.mengsreang.springJavaAnnotation;
+package com.mengsreang.springJavaConfiguration;
 
 import java.util.logging.ConsoleHandler;
 import java.util.logging.Level;

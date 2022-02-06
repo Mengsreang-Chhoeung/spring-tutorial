@@ -1,13 +1,14 @@
-package com.mengsreang.springJavaAnnotation;
+package com.mengsreang.springJavaConfiguration;
 
-import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import com.mengsreang.springJavaConfiguration.config.ApplicationConfiguration;
 
 public class JavaApplication {
 
 	public static void main(String[] args) {
 		
 		// load the spring configuration file
-		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
+		AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(ApplicationConfiguration.class);
 		
 		// retrieve bean from spring container
 		Teacher javaTeacher = context.getBean("javaTeacher", Teacher.class);

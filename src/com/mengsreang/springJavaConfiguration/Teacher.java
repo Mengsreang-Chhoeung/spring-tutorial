@@ -1,4 +1,4 @@
-package com.mengsreang.springJavaAnnotation;
+package com.mengsreang.springJavaConfiguration;
 
 public interface Teacher {
 	
