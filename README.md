@@ -6,7 +6,7 @@ _Spring makes Java simple, modern, productive, reactive, and cloud-ready._
 
 - **Microservices**
 
-  <img src="./doc-images/microservices.svg" alt="Microservice">
+  <img src="./doc-images/microservices.svg" alt="Microservice" width="80">
 
   Quickly deliver production‑grade features with independently evolvable microservices.
 
