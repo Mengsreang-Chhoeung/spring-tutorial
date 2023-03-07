@@ -1,4 +1,6 @@
-# Spring-Tutorial
+# Spring Tutorial
+
+_Spring makes Java simple, modern, productive, reactive, and cloud-ready._
 
 ### 📜 References
 
