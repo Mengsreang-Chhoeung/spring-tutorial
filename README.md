@@ -12,7 +12,7 @@ _Spring makes Java simple, modern, productive, reactive, and cloud-ready._
 
 - **Reactive**
 
-  ![Reactive](/doc-images/reactive.png)
+  ![Reactive](/doc-images/reactive.svg)
 
   Spring's asynchronous, nonblocking architecture means you can get more from your computing resources.
 
