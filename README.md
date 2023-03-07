@@ -6,38 +6,38 @@ _Spring makes Java simple, modern, productive, reactive, and cloud-ready._
 
 - **Microservices**
 
-  ![Microservice](/doc-images/microservices.svg)
+  <img src="./doc-images/microservices.svg" alt="Microservice">
 
   Quickly deliver production‑grade features with independently evolvable microservices.
 
 - **Reactive**
 
-  ![Reactive](/doc-images/reactive.svg)
+  <img src="./doc-images/reactive.svg" alt="Reactive">
 
   Spring's asynchronous, nonblocking architecture means you can get more from your computing resources.
 
 - **Cloud**
-  ![Cloud](/doc-images/cloud.svg)
+  <img src="./doc-images/cloud.svg" alt="Cloud">
 
   Your code, any cloud—we’ve got you covered. Connect and scale your services, whatever your platform.
 
 - **Web apps**
-  ![Web apps](/doc-images/web-apps.svg)
+  <img src="./doc-images/web-apps.svg" alt="Web apps">
 
   Frameworks for fast, secure, and responsive web applications connected to any data store.
 
 - **Serverless**
-  ![Serverless](/doc-images/serverless.svg)
+  <img src="./doc-images/serverless.svg" alt="Serverless">
 
   The ultimate flexibility. Scale up on demand and scale to zero when there’s no demand.
 
 - **Event Driven**
-  ![Event Driven](/doc-images/event-driven.svg)
+  <img src="./doc-images/event-driven.svg" alt="Event Driven">
 
   Integrate with your enterprise. React to business events. Act on your streaming data in realtime.
 
 - **Batch**
-  ![Batch](/doc-images/batch.svg)
+  <img src="./doc-images/batch.svg" alt="Batch">
 
   Automated tasks. Offline processing of data at a time to suit you.
 
