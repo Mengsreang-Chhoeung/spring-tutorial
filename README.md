@@ -62,6 +62,10 @@ _Spring makes Java simple, modern, productive, reactive, and cloud-ready._
 
 [🔼 Back to top](#spring-tutorial)
 
+## Roadmap
+
+Before jumping to the core of Spring and Spring Boot, let's have a look at the [roadmap](https://roadmap.sh/spring-boot) first.
+
 ## Sample Application with Spring Boot
 
 ```java
@@ -102,6 +106,7 @@ It was **developed** by **Rod Johnson** in `2003`.
 - [Spring Framework Documentation](https://docs.spring.io/spring-framework/docs/current/reference/html)
 - [Spring Framework from Javatpoint](https://www.javatpoint.com/spring-tutorial)
 - [Spring Framework from Baeldung](https://baeldung.com/spring-tutorial)
+- [Spring Boot Developer Roadmap](https://roadmap.sh/spring-boot)
 
 ### 🤝 Contributors
 
